@@ -211,6 +211,10 @@ footer nav ul {
         gap: 0.5rem;
     }
 
+    section {
+        padding: 2rem 0;
+    }
+
     .hero .container {
         grid-template-columns: 1fr;
     }
