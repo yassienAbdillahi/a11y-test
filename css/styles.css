@@ -10,6 +10,11 @@ body {
     background: #fff;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 h1,
 h2,
 h3 {
@@ -98,6 +103,11 @@ section {
     padding: 3rem 0;
 }
 
+section h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
 #campaign-heading {
     margin-top: 0;
 }
@@ -116,9 +126,10 @@ section[aria-labelledby="campaign-heading"] .container {
     align-items: center;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+.hero-image img,
+.campaign-image img,
+.card-image img {
+    border-radius: 6px;
 }
 
 .button {
@@ -146,6 +157,9 @@ img {
 .card-grid article {
     border: 1px solid #e5e5e5;
     padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
     background: #fff;
 }
 
@@ -156,9 +170,14 @@ img {
     margin-bottom: 0.75rem;
 }
 
+.card-grid h3 {
+    margin: 0;
+}
+
 .card-grid a {
     display: inline-block;
     margin-top: 0.5rem;
+    align-self: flex-start;
 }
 
 form {
@@ -229,5 +248,10 @@ footer nav ul {
 
     .campaign-image {
         order: -1;
+    }
+
+    .hero .container,
+    section[aria-labelledby="campaign-heading"] .container {
+        gap: 1.5rem;
     }
 }
