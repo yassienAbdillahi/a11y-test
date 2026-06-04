@@ -199,3 +199,31 @@ footer nav ul {
     justify-content: flex-start;
     flex-wrap: wrap;
 }
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .hero .container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-image {
+        order: -1;
+    }
+
+    section[aria-labelledby="campaign-heading"] .container {
+        grid-template-columns: 1fr;
+    }
+
+    .campaign-image {
+        order: -1;
+    }
+}
