@@ -108,6 +108,47 @@ section h2 {
     margin-bottom: 1rem;
 }
 
+.story {
+    background: #f5f8fb;
+}
+
+.story-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.story-intro {
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+}
+
+.story audio {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.story details {
+    border: 1px solid #d9e2ec;
+    border-radius: 4px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.story summary {
+    cursor: pointer;
+    padding: 1rem;
+    font-weight: 600;
+}
+
+.story details[open] summary {
+    border-bottom: 1px solid #d9e2ec;
+}
+
+.story details p {
+    padding: 1rem;
+    margin: 0;
+}
+
 #campaign-heading {
     margin-top: 0;
 }
