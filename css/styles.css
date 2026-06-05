@@ -180,14 +180,6 @@ section[aria-labelledby="campaign-heading"] .container {
     margin: 1rem auto 0 auto;
 }
 
-video::cue(.campaign-lead) {
-    color: white;
-}
-
-video::cue(.interviewer) {
-    color: lightcyan;
-}
-
 .video-section p {
     max-width: 800px;
 }
