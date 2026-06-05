@@ -167,6 +167,23 @@ section[aria-labelledby="campaign-heading"] .container {
     align-items: center;
 }
 
+.video-section {
+    background: #f5f8fb;
+    padding: 3rem 0;
+}
+
+.video-section video {
+    width: 100%;
+    max-width: 67%;
+    display: block;
+    border-radius: 6px;
+    margin: 1rem auto 0 auto;
+}
+
+.video-section p {
+    max-width: 800px;
+}
+
 .hero-image img,
 .campaign-image img,
 .card-image img {
