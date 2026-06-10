@@ -250,10 +250,19 @@ section[aria-labelledby="campaign-heading"] .container {
     align-self: flex-start;
 }
 
+.newsletter-form-container {
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
+    align-items: center;
+}
+
 form {
     display: grid;
     gap: 1rem;
-    max-width: 500px;
+    max-width: 700px;
+    flex-basis: 50%;
+    flex-shrink: 0;
 }
 
 input {
@@ -267,6 +276,10 @@ label {
     font-weight: 600;
     display: block;
     margin-bottom: 0.25rem;
+}
+
+label[for="email"] {
+    color: #c62828;
 }
 
 button[type="submit"] {
@@ -351,5 +364,10 @@ footer nav ul {
     .hero .container,
     section[aria-labelledby="campaign-heading"] .container {
         gap: 1.5rem;
+    }
+
+    .newsletter-form-container {
+        flex-direction: column;
+        align-items: unset;
     }
 }
